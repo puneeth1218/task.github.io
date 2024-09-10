@@ -1,39 +1,50 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-h1{
-    font-size: 40pt;
-    color: rgb(2, 2, 2);
-    font-family: 'Permanent Marker', cursive;
-    text-shadow: 2px 2px 5px rgb(238, 238, 238);
-    
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
 }
-h2{
-    font-size: 26pt;
-    font-family: 'Permanent Marker', cursive;
-    text-shadow: 2px 2px 5px rgb(235, 232, 237);
+.container{
+    width:100%;
+    height:100vh;
+    background:#64696a;
+    display: flex;
+    align-items: centre;
+    justify-content: centre;
 }
-table#board td{
-   
-    background: rgb(177, 56, 56);
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
-
-    height: 130px;
-    width: 130px;
-    border: 3px solid rgb(0, 0, 0);
-    margin: 19px;
-    text-align: center;
-    font-family: 'Fredoka One', cursive;
-    font-size: 60pt;
-    color: rgb(223, 200, 223);
-    border-radius: 15px;
+.calculator{
+    background: #c0c8ce;
+    align-items: center;
+    padding : 20px;
+    border-radius: 10px;
 }
-
-button#btn{
-    padding: 8px 19px;
-    background: rgb(2,0,36);
-    font-size: 15pt;
-    color: silver;
-    border-radius: 12px;
-    margin-bottom: 8px;
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width : 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(41, 25, 25, 0.1),5px 5px 15px rgba(41, 25, 25, 0.1);
+background: transparent;
+font-size: 20px;
+color: #8c4c4c;
+cursor: pointer;
+margin: 10px;
+}
+form.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form.display{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+.operator{
+    color: rgb(248, 21, 21);
 }
